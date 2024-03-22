@@ -49,7 +49,7 @@ Główne cechy to:
 - podgląd css na bieżąco aktualizowany
 
 
-![strona główna](https://github.com/azorek777/projekty/blob/main/lister/strona_glowna.png)
+![strona główna](https://github.com/azorek777/projekty/blob/main/css-creator/strona.png)
 
 
 ## Aliexpress-new-account-creator
