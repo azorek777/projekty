@@ -13,6 +13,6 @@ Główne cechy to:
 - galeria z użyciem js
 
 Poniżej zrzuty ekranu działającej strony
-(https://github.com/azorek777/projekty/blob/main/mixr/strona_glowna.png)
-(https://github.com/azorek777/projekty/blob/main/mixr/galeria.png)
-(https://github.com/azorek777/projekty/blob/main/mixr/telefon.png)
+![strona główna](https://github.com/azorek777/projekty/blob/main/mixr/strona_glowna.png)
+![galeria](https://github.com/azorek777/projekty/blob/main/mixr/galeria.png)
+![widok na telefonie](https://github.com/azorek777/projekty/blob/main/mixr/telefon.png)
