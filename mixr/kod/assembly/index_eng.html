@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>MixR - Do it by yourself</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles_v20.css" rel="stylesheet" />
+        <!-- Highlight.js -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+        <link rel="stylesheet" href="../css/drakula.css">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="https://mixr.fun">
+                <!-- For scroll up  -->
+            <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"></a> -->
+                <span class="d-block d-lg-none">MixR</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-14 mx-auto mb-2" src="../assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#requirements">Requirements</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#printing">1. Printing</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#customkeycaps">2. Custom Keycaps</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#assembly">3. Assmebly</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#soldering">4. Soldering</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#flashingesp">5. Flashing ESP</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#puttogether">6. Put all together</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#software">Software</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/gallery/index_eng.html">Gallery</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index_eng.html"><img src="../assets/eng.png"></a><a class="nav-link js-scroll-trigger" href="index.html"><img src="../assets/pol.png"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- Introduction-->
+            <section class="resume-section" id="page-top">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        MixR
+                        <span class="text-primary">- Do it by yourself</span>
+                    </h1>
+                    <hr class="mb-5" />
+                    <p class="lead mb-5">Below we present full instructions on how to make your own device step by step. The whole process does not take long, so it can be done in one evening.</p>
+
+                    <img src="/assembly/assets/kopia1.png" class="img-fluid mb-0 heightwidth75" alt="glowne zdjecie">
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Requirements-->
+            <section class="resume-section" id="requirements">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Requirements</h2>
+                    <div class="subheading mb-2">Slide potentiometers</div>
+                    
+                    <p class="lead mb-0">Link: <a href="https://aliexpress.com/item/1005001448448002.html">AliExpress</a></p>
+                    <div class="mb-5">The auction is for 5 pieces, but after writing a message to the seller, you can buy 6 pcs.</div>
+
+                    <div class="subheading mb-2">Switches</div>
+                    <p class="lead mb-0">Link: <a href="https://aliexpress.com/item/1005003206504286.html">AliExpress</a></p>
+                    <div class="mb-5">The original model fits MX Cherry switches. Personally, I recommend brown or red because of the quiet click.</div>
+
+                    <div class="subheading mb-2">ESP-32S</div>
+                    <p class="lead mb-5">Link: <a href="https://aliexpress.com/item/1005002611857804.html">AliExpress</a></p>
+
+                    <div class="subheading mb-2">Wires</div>
+                    <div class="mb-5">There can be any wire found in the house, although I personally recommend dupont wires for arduino because of the variety of colors</div>
+
+                    <div class="subheading mb-2">MicroUSB cable</div>
+                    <div class="mb-5">The cable is needed to connect the MixR to the computer, so it would be best if it had min. 1 meter.</div>
+
+                    <div class="subheading mb-2">Screws</div>
+                    <p class="lead mb-0">- 12 pcs. M2 screws, preferably M2*5</p>
+                    <p class="lead mb-0">- 4 pcs. M3 screws</p>
+                    <div class="mb-5">If someone does not have such at home, I recommend to buy such a set for the future <span class="download"><a href="https://www.amazon.pl/dp/B07748JK1H/ref=cm_sw_r_u_apa_i_B1SQT416KGDMTGGJQV9F">LINK</a></span></div>
+
+                    <div class="subheading mb-5">Soldering iron</div>
+                    <div class="mb-2">Of course, all things can be bought in local shops, inserted links are to the cheapest and proven offers.</div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Printing-->
+            <section class="resume-section" id="printing">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Printing</h2>
+                    <p class="lead mb-5">To build MixR <span style='color: rgb(357, 74, 100);'>YOU DON'T NEED YOUR OWN 3D PRINTER.</span> All parts with the housing can be purchased online, but by printing them we reduce costs.</p>
+
+                    <div class="subheading mb-3">Case</div>
+                    <img src="assets/img1.png" class="img-fluid mb-3 heightwidth75" alt="zdj1">
+                    <p class="lead mb-0">Model to download <span class="download"><a href="https://www.printables.com/en/model/476566-mixr-case">HERE</a></span></p>
+                    <p class="lead mb-5">If someone does not have a printer, the case can be purchased at this <span class="download"><a href="https://allegrolokalnie.pl/oferta/wydruk-obudowy-do-projektu-mixr-or-druk-3d">LINK</a></span></p>
+
+                    <div class="subheading mb-2">Potentiometer caps</div>
+                    <p class="lead mb-0">Model to download <span class="download"><a href="https://www.printables.com/en/model/182401-slider-fader-knob-for-soundcraftyamaha-mixer/">HERE</a></span></p>
+                    <p class="lead mb-5">The caps can be purchased at this <span class="download"><a href="https://aliexpress.com/item/32956911559.html">LINK</a></span></p>
+
+                    <div class="subheading mb-2">Nakładki na przyciski</div>
+                    <p class="lead mb-0">Model to download <span class="download"><a href="https://www.printables.com/en/model/399852-customizable-two-color-keycaps">HERE</a></span> [More information in the next chapter]</p>
+                    <p class="lead mb-3">The keycaps can be purchased at this <span class="download"><a href="https://aliexpress.com/item/1005004822029018.html">LINK</a></span></p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Custom Keycaps-->
+            <section class="resume-section" id="customkeycaps">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Custom keycaps</h2>
+                    <p class="lead mb-5">If you don't want to print buttons, you can skip this section ;)</p>
+
+                    <div class="subheading mb-2">What are customizable buttons?</div>
+                    <p class="lead mb-3">On the website you can download three types of keycaps (5, 10 and 15 degrees of inclination) and the stencils.</p>
+
+                    <img src="assets/18.png" class="img-fluid mb-3 heightwidth75" alt="zdj1">
+
+                    <div class="subheading mb-2">How does it work?</div>
+                    <ul>
+                        <li class="ordered">1. Print chosen keycaps</li>
+                        <li class="ordered">2. Prepare your own stencil or use one of mine and print it</li>
+                        <li class="ordered">3. Put the stencil on the keycap then paint it with spray or paint</li>
+                        <li class="ordered">4. Take off the stencil and that's all :)</li>
+                    </ul>
+
+                    <div class="subheading mb-2">How to make your own stencil?</div>
+                    <ul>
+                        <li class="ordered">1. Open the .f3d file (of course you can use another program to emboss the icon)</li>
+                        <li class="ordered">2. If u need a background photo, put it instead of sound icon by clicking right button on “PUT YOUR PHOTO” </li>
+                        <li class="ordered">3. Right-click on “EDIT THIS” and choose “edit sketch”</li>
+                        <li class="ordered">4. Draw your own icon/logo</li>
+                        <li class="ordered">5. Toggle invisible on “borders”</li>
+                        <li class="ordered">6. Click on all bodies of your icon with “Ctrl” then click the “E” button </li>
+                        <li class="ordered">7. Toggle visible on “stencil” and use arrow to emboss icon in body</li>
+                        <li class="ordered">8. Confirm action, right-click on “stencil” body and choose the “save as mesh” option</li>
+                        <li class="ordered">9. Take your file type (I chose .stl) and click export</li>
+                    </ul>
+                    <p class="lead mb-3">Here you have an instruction video for this:: </p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6gFp0be9J2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Assmebly-->
+            <section class="resume-section" id="assembly">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Assembly</h2>
+                    <ul>
+                        <li><p>Installation can be started from the top of the housing. Press the switches into the square holes. They should fit perfectly, and when inserting a snap. </p></li>
+                        <li><p>Then insert the potentiometers from the back and screw them with M2*5 screws.</p></li>
+                        <li><p>Prepare the ESP-32S board for soldering. Personally, I recommend desoldering the header pins that are included, because then it will be easier to solder all the wires.</p></li>
+                    </ul>
+                    <img src="assets/assembled.png" class="img-fluid mb-0 heightwidth75" alt="zdj1">
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Soldering -->
+            <section class="resume-section" id="soldering">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Soldering</h2>
+
+                    <div class="subheading mb-2">Soldering scheme</div>
+                    <img src="assets/diagram.jpg" class="img-fluid mb-5 schemat heightwidth75" alt="zdj1">
+                    <p class="mb-5">Scheme in PDF file: <span class="download"><a href="/assembly/assets/diagram.PDF">DOWNLOAD</a></span></p>
+                    <p class="mb-3">Connect the wires as in the diagram above. Each switch has its own separate wire. Additionally, there is one common ground that can be connected from button to button. The same is true for a common wire for powering potentiometers</p>
+                    <p class="mb-5">Once all the wires are soldered, you can screw the board to the bottom of the housing.</p>
+                    <img src="assets/solder.png" class="img-fluid mb-0 heightwidth75" alt="zdj1">
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Flashing ESP-->
+            <section class="resume-section" id="flashingesp">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Flashing ESP</h2>
+
+                    <pre class="mb-0">
+                        <code class="language-c">
+#include &lt;stdint.h&gt;
+#include &lt;Arduino.h&gt;
+
+uint8_t btn_prev_12;
+uint8_t btn_prev_13;
+uint8_t btn_prev_14;
+uint8_t btn_prev_25;
+uint8_t btn_prev_26;
+uint8_t btn_prev_27;
+
+uint16_t slider_32;
+uint16_t slider_33;
+uint16_t slider_34;
+uint16_t slider_35;
+uint16_t slider_36;
+uint16_t slider_39;
+
+uint16_t slider_new_32;
+uint16_t slider_new_33;
+uint16_t slider_new_34;
+uint16_t slider_new_35;
+uint16_t slider_new_36;
+uint16_t slider_new_39;
+
+float limit = 0.9;
+
+void setup() {
+    Serial.begin(115200);
+    pinMode(12, INPUT_PULLUP);
+    pinMode(13, INPUT_PULLUP); 
+    pinMode(14, INPUT_PULLUP);
+    pinMode(25, INPUT_PULLUP);
+    pinMode(26, INPUT_PULLUP);
+    pinMode(27, INPUT_PULLUP);
+    pinMode(32, INPUT_PULLUP);
+    pinMode(33, INPUT_PULLUP);
+    pinMode(34, INPUT_PULLUP);
+    pinMode(35, INPUT_PULLUP);
+    pinMode(36, INPUT_PULLUP);
+    pinMode(39, INPUT_PULLUP);
+
+    btn_prev_12 = digitalRead(12);
+    btn_prev_13 = digitalRead(13);
+    btn_prev_14 = digitalRead(14);
+    btn_prev_25 = digitalRead(25);
+    btn_prev_26 = digitalRead(26);
+    btn_prev_27 = digitalRead(27);
+
+    slider_32 = analogRead(32);
+    slider_33 = analogRead(33);
+    slider_34 = analogRead(34);
+    slider_35 = analogRead(35);
+    slider_36 = analogRead(36);
+    slider_39 = analogRead(39);
+
+}
+
+void loop() {
+    delay(150); // this speeds up the simulation
+
+    if (digitalRead(12) == LOW && btn_prev_12 == HIGH) {
+        Serial.println(2);
+    }
+    btn_prev_12 = digitalRead(12);
+
+    if (digitalRead(13) == LOW && btn_prev_13 == HIGH) {
+        Serial.println(1);
+    }
+    btn_prev_13 = digitalRead(13);
+
+    if (digitalRead(14) == LOW && btn_prev_14 == HIGH) {
+        Serial.println(4);
+    }
+    btn_prev_14 = digitalRead(14);
+
+    if (digitalRead(25) == LOW && btn_prev_25 == HIGH) {
+        Serial.println(3);
+    }
+    btn_prev_25 = digitalRead(25);
+
+    if (digitalRead(26) == LOW && btn_prev_26 == HIGH) {
+        Serial.println(6);
+    }
+    btn_prev_26 = digitalRead(26);
+
+    if (digitalRead(27) == LOW && btn_prev_27 == HIGH) {
+        Serial.println(5);
+    }
+    btn_prev_27 = digitalRead(27);
+
+    slider_new_32 = analogRead(32);
+    slider_new_32 = map(slider_new_32, 0, 4095, 0, 100);
+
+    slider_new_33 = analogRead(33);
+    slider_new_33 = map(slider_new_33, 0, 4095, 0, 100);
+
+    slider_new_34 = analogRead(34);
+    slider_new_34 = map(slider_new_34, 0, 4095, 0, 100);
+
+    slider_new_35 = analogRead(35);
+    slider_new_35 = map(slider_new_35, 0, 4095, 0, 100);
+
+    slider_new_36 = analogRead(36);
+    slider_new_36 = map(slider_new_36, 0, 4095, 0, 100);
+
+    slider_new_39 = analogRead(39);
+    slider_new_39 = map(slider_new_39, 0, 4095, 0, 100);
+
+    if (abs(slider_new_32 - slider_32) > limit){
+    slider_32 = analogRead(32);
+    int percentage_32 = map(slider_32, 0, 4095, 0, 100);
+    Serial.println(5000+percentage_32);
+    }
+
+    if (abs(slider_new_33 - slider_33) > limit){
+    slider_33 = analogRead(33);
+    int percentage_33 = map(slider_33, 0, 4095, 0, 100);
+    Serial.println(6000+percentage_33);
+    }
+
+    if (abs(slider_new_34 - slider_34) > limit){
+    slider_34 = analogRead(34);
+    int percentage_34 = map(slider_34, 0, 4095, 0, 100);
+    Serial.println(3000+percentage_34);
+    }
+
+    if (abs(slider_new_35 - slider_35) > limit){
+    slider_35 = analogRead(35);
+    int percentage_35 = map(slider_35, 0, 4095, 0, 100);
+    Serial.println(4000+percentage_35);
+    }
+
+    if (abs(slider_new_36 - slider_36) > limit){
+    slider_36 = analogRead(36);
+    int percentage_36 = map(slider_36, 0, 4095, 0, 100);
+    Serial.println(1000+percentage_36);
+    }
+
+    if (abs(slider_new_39 - slider_39) > limit){
+    slider_39 = analogRead(39);
+    int percentage_39 = map(slider_39, 0, 4095, 0, 100);
+    Serial.println(2000+percentage_39);
+    }
+
+    slider_32 = analogRead(32);
+    slider_32 = map(slider_32, 0, 4095, 0, 100);
+    slider_33 = analogRead(33);
+    slider_33 = map(slider_33, 0, 4095, 0, 100);
+    slider_34 = analogRead(34);
+    slider_34 = map(slider_34, 0, 4095, 0, 100);
+    slider_35 = analogRead(35);
+    slider_35 = map(slider_35, 0, 4095, 0, 100);
+    slider_36 = analogRead(36);
+    slider_36 = map(slider_36, 0, 4095, 0, 100);
+    slider_39 = analogRead(39);
+    slider_39 = map(slider_39, 0, 4095, 0, 100); 
+}
+                        </code>
+                    </pre>
+
+                    <p class="mb-5">main.cpp file: <span class="download"><a href="/assembly/assets/main.cpp">DOWNLOAD</a></span></p>
+                    <p class="mb-2">To properly upload the software to the board we need <span class="download"><a href="https://www.arduino.cc/en/software/">ArduinoIDE program</a></span> or <span class="download"><a href="https://code.visualstudio.com/download">Visual Studio Code</a></span> with PlatformIO extension</p>
+                    <p class="mb-4">Then throw the above file into the selected program and click "build" (or compile) in the program and hold the BOOT button on the board. When finished, you should see a message that the build was successful</p>
+
+                    <img src="assets/img2.png" class="img-fluid mb-3 heightwidth50" alt="zdj1">
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- Putt all together-->
+            <section class="resume-section" id="puttogether">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Assembly all things together</h2>
+
+                    <p class="mb-3">After completing the above steps, it's time to screw everything together. You can start by screwing the board to the bottom. </p>
+                    <p class="mb-3">Then we can twist the whole thing together using M4 screws.</p>
+                    <p class="mb-3">The last thing you need to do is attach the keycaps and potentiometers. In this way, we have a complete device.</p>
+                    <p class="mb-3"></p>
+
+                    <img src="/assembly/assets/20.png" class="img-fluid mb-3 heightwidth75" alt="zdj1">
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- Software -->
+            <section class="resume-section" id="software">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Software</h2>
+
+                    <img src="assets/tuto1.png" class="img-fluid mb-5" alt="zdj1">
+
+                    <div class="subheading mb-2">How to set the volume for a specific program</div>
+                    <ul>
+                        <li class="ordered">1. Choose slider from the list on the left side.</li>
+                        <li class="ordered">2. Choose application which it should operate.</li>
+                        <li class="ordered"><b>IMPORTANT:</b> App must appear in the sound mixer to be shown in the list.</li>
+                    </ul>
+                    <img src="assets/tuto2.png" class="img-fluid mb-5" alt="zdj1">
+                    <br>
+                    <div class="subheading mb-2">How to set a function for a button?</div>
+                    <ul>
+                        <li class="ordered">1. Choose button from the list from the right side.</li>
+                        <li class="ordered">2. Choose function you are interested with.</li>
+                    </ul>
+                    <img src="assets/tuto3.png" class="img-fluid mb-5" alt="zdj1">
+                    <br>
+                    <div class="subheading mb-2">How to set your own app theme?</div>
+                    <ul>
+                        <li class="ordered">1. Click on the actual theme and then on the "Create new theme" button.</li>
+                        <li class="ordered">2. Choose colors for each block.</li>
+                        <li class="ordered">3. Save it and restart app.</li>
+                    </ul>
+                    <img src="assets/tuto3.png" class="img-fluid mb-5" alt="zdj1">
+
+
+
+                    
+                </div>
+            </section>
+
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+        <!-- Highlight.js core JS -->
+        <script>
+            hljs.highlightAll();
+        </script>
+          
+    </body>
+    <hr class="mb-0">
+    <footer> 
+       <span class="mb-0">Copyright &#169; 2023 MixR.</span><span class="mb-0">This website is made on the MIT license.</span>
+       
+    </footer>
+</html>
