@@ -21,6 +21,10 @@ Główne cechy to:
 - użycie zewnętrznych skryptów (np. formatowanie kodu C)
 - galeria z użyciem js
 
+
+![strona główna](https://github.com/azorek777/projekty/blob/main/mixr/strona_glowna.png)
+
+
 ## Lister
 
 Strona do tworzenia i wyświetlania list związanych z filmami np. ulubione filmy animowane.
@@ -32,6 +36,10 @@ Główne cechy to:
 - css napisany samemu 
 - podłączenie do bazy danych MongoDB
 
+
+![strona główna](https://github.com/azorek777/projekty/blob/main/lister/strona_glowna.png)
+
+
 ## Css-creator
 
 Strona służąca do stylizowania boxów oraz czcionki. Można na niej przygotować klasę CSS i ją następnie przekopiować do naszego pliku. Oprócz tego jest możliwość zapisywania gotowych stylów oraz galerie do wyświetlania ich w przyszłości
@@ -39,6 +47,9 @@ Strona służąca do stylizowania boxów oraz czcionki. Można na niej przygotow
 Główne cechy to: 
 - strona napisana w php
 - podgląd css na bieżąco aktualizowany
+
+
+![strona główna](https://github.com/azorek777/projekty/blob/main/lister/strona_glowna.png)
 
 
 ## Aliexpress-new-account-creator
